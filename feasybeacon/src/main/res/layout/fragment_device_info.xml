@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/device_name_label"
+        style="@style/device_info_label"
+        android:text="@string/label_device_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/device_name_value"
+        style="@style/device_info_value"
+        android:text="@string/no_info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/device_name_label"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/manufacturer_label"
+        style="@style/device_info_label"
+        android:text="@string/label_manufacturer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/device_name_label" />
+
+    <TextView
+        android:id="@+id/manufacturer_value"
+        style="@style/device_info_value"
+        android:text="@string/no_info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/manufacturer_label"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/model_number_label"
+        style="@style/device_info_label"
+        android:text="@string/label_model_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/manufacturer_label" />
+
+    <TextView
+        android:id="@+id/model_number_value"
+        style="@style/device_info_value"
+        android:text="@string/no_info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/model_number_label"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/firmware_revision_label"
+        style="@style/device_info_label"
+        android:text="@string/label_firmware_revision"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/model_number_label" />
+
+    <TextView
+        android:id="@+id/firmware_revision_value"
+        style="@style/device_info_value"
+        android:text="@string/no_info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/firmware_revision_label"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/software_revision_label"
+        style="@style/device_info_label"
+        android:text="@string/label_software_revision"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firmware_revision_label" />
+
+    <TextView
+        android:id="@+id/software_revision_value"
+        style="@style/device_info_value"
+        android:text="@string/no_info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/software_revision_label"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/update"
+        style="@style/button_primary"
+        android:text="@string/update_device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 拥有完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问大概位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许应用程序读取设备的Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 防止手机休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 与蓝牙设备配对 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- 需要能够发现和配对附近的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <!-- 开关蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 蓝牙管理 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 修改/删除 SD 卡中的内容 -->
+
+    <!-- 读写特权权限 -->
+    <!--    <uses-permission-->
+    <!--        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"-->
+    <!--        tools:ignore="ProtectedPermissions" />-->
+    <!-- 修改安全系统设置 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 拍摄照片和视频 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 读取 SD 卡中的内容 -->
+
+    <!-- 从外部存储中读取图片文件 -->
+    <!--    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />-->
+    <!-- 发现接近的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FeasyBeacon1">
+
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.ad.AdActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 主活动 -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 次要活动 -->
+        <activity
+            android:name=".ui.parameter.ParameterSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.parameter.AtCommandDebugging"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.batch.config.BatchConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ota.OtaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.batch.scan.BatchScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.batch.modify.BatchModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.addbeacon.AddBeaconActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.addbeacon.AddConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.filter.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CrashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.QRCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.AboutMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.PdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.about.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.beacon.CustomBroadcastActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.suota.activities.SuotaActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.setting.ScanQrActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 服务 -->
+        <service
+            android:name="com.feasycom.service.AtCommandService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.feasycom.service.OTAService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

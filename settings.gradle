@@ -1,0 +1,3 @@
+rootProject.name = "FeasyBeacon"
+// 只包含应用层；FeasyBeaconLibrary 以 AAR 形式引入（feasybeacon/libs/FeasyBeaconLibrary-release.aar）
+include ':feasybeacon'

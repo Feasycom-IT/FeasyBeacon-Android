@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/beaconFragment">
+
+    <fragment
+        android:id="@+id/beaconFragment"
+        android:name="com.feasycom.feasybeacon.ui.beacon.BeaconFragment"
+        android:label="BeaconFragment" />
+
+    <fragment
+        android:id="@+id/sensorFragment"
+        android:name="com.feasycom.feasybeacon.ui.sensor.SensorFragment"
+        android:label="SensorFragment" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.feasycom.feasybeacon.ui.setting.SettingFragment"
+        android:label="SettingFragment" />
+
+    <fragment
+        android:id="@+id/OTAFragment"
+        android:name="com.feasycom.feasybeacon.ui.ota.OtaActivity"
+        android:label="OTAFragment" />
+
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.feasycom.feasybeacon.ui.store.StoreFragment"
+        android:label="StoreFragment" />
+
+    <fragment
+        android:id="@+id/forumFragment"
+        android:name="com.feasycom.feasybeacon.ui.forum.ForumFragment"
+        android:label="ForumFragment" />
+
+    <include app:graph="@navigation/about_nav" />
+
+</navigation>

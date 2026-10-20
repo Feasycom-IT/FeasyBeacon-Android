@@ -1,0 +1,19 @@
+<resources>
+    <!-- 默认屏幕边距，遵循 Android 设计准则。 -->
+    <dimen name="divide_height">0.5dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="divider">1dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="font_device_info">15sp</dimen>
+    <dimen name="radius_medium">10dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="loading_size">50dp</dimen>
+    <dimen name="margin_fw_name_info">4dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_cv">2dp</dimen>
+    <dimen name="margin_fw_info">2dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+    <dimen name="radius_small">5dp</dimen>
+    <dimen name="font_huge">30sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+</resources>

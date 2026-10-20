@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_background"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altBeacon_uuid_label"
+                style="@style/setting_parameter_left_text"
+                android:text="ID1:" />
+
+            <EditText
+                android:id="@+id/condition_altBeacon_id_1"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altBeacon_major_label"
+                style="@style/setting_parameter_left_text"
+                android:text="ID2: " />
+
+            <EditText
+                android:id="@+id/condition_altBeacon_id_2"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altBeacon_minor_label"
+                style="@style/setting_parameter_left_text"
+                android:text="ID3: " />
+
+            <EditText
+                android:id="@+id/condition_altBeacon_id_3"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altBeacon_rssi_label"
+                style="@style/setting_parameter_left_text"
+                android:text="RSSI at 1m: " />
+
+            <EditText
+                android:id="@+id/condition_altBeacon_rssi"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789-" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altBeacon_manufacture_id_label"
+                style="@style/setting_parameter_left_text"
+                android:text="Manufacturer ID" />
+
+            <EditText
+                android:id="@+id/condition_altBeacon_manufacture_id"
+                style="@style/iBeaconEdit"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altBeacon_manufacture_reserved_label"
+                style="@style/setting_parameter_left_text"
+                android:text="Manufacturer Reserved" />
+
+            <EditText
+                android:id="@+id/condition_altBeacon_manufacture_reserved"
+                style="@style/iBeaconEdit"
+                android:digits="0123456789abcdefABCDEF" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Enable:"
+                android:textColor="@color/about_title"
+                android:textSize="14sp" />
+
+            <com.feasycom.feasybeacon.ui.view.SwitchButton
+                android:id="@+id/condition_altbeacon_enable"
+                android:layout_width="54dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/iBeaconEditLL"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                style="@style/setting_parameter_left_text"
+                android:layout_gravity="center_vertical"
+                android:text="Sensor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/condition_altbeacon_sensor_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false"
+                    android:padding="0dp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/iBeaconEditLL"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                style="@style/setting_parameter_left_text"
+                android:layout_gravity="center_vertical"
+                android:text="Action" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/condition_altbeacon_action_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false"
+                    android:padding="0dp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altbeacon_interval_label"
+                style="@style/setting_parameter_left_text"
+                android:text="Interval(ms) " />
+
+            <EditText
+                android:id="@+id/condition_altbeacon_interval"
+                style="@style/iBeaconEdit"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/iBeaconEditLL">
+
+            <TextView
+                android:id="@+id/condition_altbeacon_timeout_label"
+                style="@style/setting_parameter_left_text"
+                android:text="Timeout(ms) " />
+
+            <EditText
+                android:id="@+id/condition_altbeacon_timeout"
+                style="@style/iBeaconEdit"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

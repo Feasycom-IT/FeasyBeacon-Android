@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/central") }
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://jitpack.io") } // 修复语法错误：url 'xxx' → url = uri("xxx")
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        // 导航插件版本与 Gradle 插件版本匹配（8.13.0 建议用 2.7+ 版本）
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7'
+        // 保持 8.13.0 版本（需 JDK 17 支持）
+        classpath 'com.android.tools.build:gradle:8.13.0'
+        // Kotlin 版本与 Gradle 8.13.0 匹配（建议升级到 1.9.0+）
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.20"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/central") }
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://jitpack.io") } // 修复语法错误
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// 修复拼写错误：rg.jetbrains → org.jetbrains
+configurations.all {
+    resolutionStrategy {
+        force "org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0"
+    }
+}

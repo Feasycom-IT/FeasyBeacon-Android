@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/BeaconInfo_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AOABeacon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company ID: " />
+
+            <TextView
+                android:id="@+id/tv_aoa_company_id"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Type: " />
+
+            <TextView
+                android:id="@+id/tv_aoa_sub_type"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CTE Info: " />
+
+            <TextView
+                android:id="@+id/tv_aoa_cte_info"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beacon ID: " />
+
+            <TextView
+                android:id="@+id/tv_aoa_beacon_id"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beacon Type: " />
+
+            <TextView
+                android:id="@+id/tv_aoa_beacon_type"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery: " />
+
+            <TextView
+                android:id="@+id/tv_aoa_battery_level"
+                style="@style/BeaconInfo_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

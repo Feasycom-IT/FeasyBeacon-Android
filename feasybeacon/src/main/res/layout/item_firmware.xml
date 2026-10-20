@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/margin_medium">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_color_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Reporter x" />
+
+    <RelativeLayout
+        android:id="@+id/details_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name">
+
+        <TextView
+            android:id="@+id/label_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_fw_name_info"
+            android:text="@string/label_type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/label_type"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_toEndOf="@id/label_type"
+            android:gravity="start"
+            android:text="@string/no_info"
+            tools:text="68x" />
+
+        <TextView
+            android:id="@+id/label_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_type"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin_fw_info"
+            android:text="@string/label_version"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/label_version"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_toEndOf="@id/label_version"
+            android:gravity="start"
+            android:text="@string/no_info"
+            tools:text="1.2.0.1" />
+
+        <TextView
+            android:id="@+id/label_payload_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_version"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin_fw_info"
+            android:text="@string/label_size"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/payload_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/label_payload_size"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_toEndOf="@id/label_payload_size"
+            android:gravity="start"
+            android:text="@string/no_info"
+            tools:text="1234420" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
