@@ -15,11 +15,11 @@ feasybeacon/libs/FeasyBeaconLibrary-release.aar
 
 | 版本 | 文件 | 大小 | SHA-256 |
 |---|---|---|---|
-| v3.3.9.9 | [apk/FeasyBeacon_V3.3.9.9.apk](apk/FeasyBeacon_V3.3.9.9.apk) | 19.53 MiB（20,474,794 B） | `21A038274A79293801E029FA886F8D2BC3417D9DB25817FED5ECA1FA879E1C20` |
+| v3.3.9.10 | [apk/FeasyBeacon_V3.3.9.10.apk](apk/FeasyBeacon_V3.3.9.10.apk) | 18.28 MiB（19,164,966 B） | `B4BBEF4F10FA0ED25D98848B755A6780D2CA1AD350E20458F20D3469A50B737E` |
 
 - 安装包为已构建的 APK，可直接安装/覆盖升级；如需核验签名，请使用 `apksigner` 查看。
 - 适用系统：**Android 10 及以上**（minSdk 29）。
-- 源码版本和 APK 版本均为 **3.3.9.9**；AAR 内部库模块版本为 `3.3.8.7`。
+- 源码版本和 APK 版本均为 **3.3.9.10**；AAR 内部库模块版本为 `3.3.9.10`。
 - 说明：`apk/` 下的 APK 来自当前发布包，使用内部发布签名；公开源码已移除 Bugly 和签名配置，因此 APK 与公开源码在崩溃上报和签名上不完全一致。需要与源码完全一致的包，请自行编译并签名。
 
 ## 1. 引入 SDK / Add the SDK
@@ -34,7 +34,7 @@ implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 3. AAR 的 SHA-256（请核对，防止被替换）：
 
 ```text
-D48CE9F710C66EDF3016BAE1A897F09F3A25701AEAFF0FDC2C7D41DEDE5F7F1B
+84B7420DA900C489089D116BCCEB6D41DB146736602D15B0F9ABEB83D2248EE3
 ```
 
 > AAR 已自带 `libFeasyBeaconLibrary.so`，本仓库没有再单独放置 `.so` 目录；不要替换或重命名原生库。
@@ -59,8 +59,8 @@ D48CE9F710C66EDF3016BAE1A897F09F3A25701AEAFF0FDC2C7D41DEDE5F7F1B
 | 项 | 值 |
 |---|---|
 | applicationId | `com.feasycom.feasybeacon` |
-| versionName | 3.3.9.9 |
-| versionCode | 398 |
+| versionName | 3.3.9.10 |
+| versionCode | 399 |
 | minSdk / targetSdk | 29 / 35 |
 | compileSdk | 35 |
 | ABI | `arm64-v8a`、`armeabi-v7a` |
@@ -79,7 +79,7 @@ D48CE9F710C66EDF3016BAE1A897F09F3A25701AEAFF0FDC2C7D41DEDE5F7F1B
 ```text
 .
 ├── apk/
-│   └── FeasyBeacon_V3.3.9.9.apk
+│   └── FeasyBeacon_V3.3.9.10.apk
 ├── build.gradle                 # 根构建脚本
 ├── settings.gradle              # 只包含 :feasybeacon
 ├── gradle/wrapper/              # Gradle Wrapper
