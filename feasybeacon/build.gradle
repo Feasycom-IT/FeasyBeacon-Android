@@ -11,8 +11,8 @@ android {
         applicationId "com.feasycom.feasybeacon"
         minSdk 29
         targetSdk 35
-        versionCode 398
-        versionName "3.3.9.9"
+        versionCode 33915
+        versionName "3.3.9.15"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         ndk {

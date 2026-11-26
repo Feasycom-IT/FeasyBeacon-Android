@@ -238,7 +238,14 @@
     <string name="update_message">发现新版本，请更新到最新版本以获取最新功能。</string>
     <string name="talk_later">稍后再说</string>
     <string name="Update">更新</string>
-    <string name="userAndPrivacyResume"><![CDATA[感谢您信任并使用FeasyBeacon，在您使用扫描蓝牙设备服务时，我们可能需要开启定位权限，读取位置信息、读取附近的设备来体验相关功能。 客户端在空中升级和批量空中升级页面下载固件、访问商城页面、反馈页面过程中需联网，联网产生的流量费请咨询当地运营商。 在您使用设置扫描二维码连接Beacon服务时，我们会申请开启相机权限。当您在关于->保存二维码图片时会申请存储空间权限。 详细条款请参考《FeasyBeacon用户使用协议》和《FeasyBeacon隐私政策》。]]></string>
+          <string name="userAndPrivacyResume"><![CDATA[感谢您信任并使用 FeasyBeacon。为向您提供蓝牙信标搜索、连接、参数配置与固件升级等功能，我们会在您同意本政策后处理以下信息：
+  1）蓝牙设备信息（设备名称、MAC 地址、信号强度、广播数据），用于搜索并连接设备；
+  2）设备与网络信息（设备型号、系统版本、应用版本、网络类型、IP 地址），用于更新设备型号表、下载升级文件、检查版本、加载启动页广告与产品页面；
+  定位权限仅用于满足 Android 系统对蓝牙扫描的要求，我们不会读取或上传您的实际位置信息；相机权限仅在您扫码连接设备时使用；存储权限仅用于读取升级文件与保存二维码图片。
+  产品页面为飞易通官网内嵌网页，可能使用 Cookie 与访问日志；本应用不涉及账号、订单与支付。
+  我们不会收集 IMEI、IMSI、OAID、本机 MAC 地址、应用列表、剪贴板内容等个人信息。
+  在您点击“同意”之前，我们不会初始化任何第三方 SDK、不会发起网络请求、不会申请上述敏感权限。
+  完整条款请阅读《FeasyBeacon 用户协议》和《FeasyBeacon 隐私政策》。]]></string>
     <string name="disagree">不同意</string>
     <string name="and">和</string>
     <string name="custom_broadcast">广播</string>

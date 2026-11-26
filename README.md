@@ -15,12 +15,12 @@ feasybeacon/libs/FeasyBeaconLibrary-release.aar
 
 | 版本 | 文件 | 大小 | SHA-256 |
 |---|---|---|---|
-| v3.3.9.11 | [apk/FeasyBeacon_V3.3.9.11.apk](apk/FeasyBeacon_V3.3.9.11.apk) | 18.29 MiB（19,181,266 B） | `389F8CB494900DD39A4AE642E739B6BB66E9A72AA1375A5F6187605868C265F7` |
+| v3.3.9.15 | [apk/FeasyBeacon_V3.3.9.15.apk](apk/FeasyBeacon_V3.3.9.15.apk) | 17.67 MiB（18,525,347 B） | `04634702482401ECD21BD5B5FBDBFE920519E2F971107D7D68ED2D7F966DF591` |
 
 - 安装包为已构建的 APK，可直接安装/覆盖升级；如需核验签名，请使用 `apksigner` 查看。
 - 适用系统：**Android 10 及以上**（minSdk 29）。
-- 源码版本和 APK 版本均为 **3.3.9.11**；AAR 内部库模块版本为 `3.3.9.11`。
-- 说明：`apk/` 下的 APK 来自当前发布包，使用内部发布签名；公开源码已移除 Bugly 和签名配置，因此 APK 与公开源码在崩溃上报和签名上不完全一致。需要与源码完全一致的包，请自行编译并签名。
+- 源码版本和 APK 版本均为 **3.3.9.15**；AAR 内部库模块版本为 `3.3.9.13`。
+- 说明：`apk/` 下的 APK 使用内部发布签名；公开源码已移除签名配置，因此 APK 与公开源码在签名上不完全一致。需要与源码完全一致的包，请自行编译并签名。
 
 ## 1. 引入 SDK / Add the SDK
 
@@ -34,7 +34,7 @@ implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 3. AAR 的 SHA-256（请核对，防止被替换）：
 
 ```text
-4377E352F8D48384C5828D5616C25ADADCC6FE9DCD99BC17E42F13E56B6BFF0C
+A3734C5DA5A198704F02BB629FC13F78441EF5591D43AD96292E785907821EEB
 ```
 
 > AAR 已自带 `libFeasyBeaconLibrary.so`，本仓库没有再单独放置 `.so` 目录；不要替换或重命名原生库。
@@ -59,8 +59,8 @@ implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 | 项 | 值 |
 |---|---|
 | applicationId | `com.feasycom.feasybeacon` |
-| versionName | 3.3.9.11 |
-| versionCode | 33911 |
+| versionName | 3.3.9.15 |
+| versionCode | 33915 |
 | minSdk / targetSdk | 29 / 36 |
 | compileSdk | 36 |
 | ABI | `arm64-v8a`、`armeabi-v7a` |
@@ -79,7 +79,7 @@ implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 ```text
 .
 ├── apk/
-│   └── FeasyBeacon_V3.3.9.11.apk
+│   └── FeasyBeacon_V3.3.9.15.apk
 ├── build.gradle                 # 根构建脚本
 ├── settings.gradle              # 只包含 :feasybeacon
 ├── gradle/wrapper/              # Gradle Wrapper
@@ -94,7 +94,7 @@ implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 ## 6. 说明 / Notes
 
 - 本仓库只发布**应用层源码、APK、SDK 使用文档和预编译 AAR**，不包含 FeasyBeaconLibrary 源码和签名密钥。
-- 公开仓库已移除 Bugly 依赖和 App ID，保留 `CustomActivityOnCrash` 作为崩溃兜底；如需接入 Bugly，请使用固定版本并在本地配置 App ID。
+- 内网与公开源码均已移除 Bugly 依赖，保留 `CustomActivityOnCrash` 作为崩溃兜底。
 - AAR 包含 BLE/GATT、AT 指令、加密、DFU 和 SUOTA；手机端 iBeacon/AltBeacon/Eddystone 广播在 `ui/setting/*Advertiser.java` 中实现。
 - `Device.json` 是 App 层的型号参数表，不在 AAR 内。
 - 完整接入说明见 [docs/FeasyBeacon使用文档.md](docs/FeasyBeacon使用文档.md)。
