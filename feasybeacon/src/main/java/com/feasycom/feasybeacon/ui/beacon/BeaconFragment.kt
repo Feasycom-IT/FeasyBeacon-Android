@@ -210,7 +210,6 @@ class BeaconFragment : BaseFragment<FragmentBeaconBinding>(), FscBleCallback {
                 sensorNav.setOnClickListener { findNavController().navigate(R.id.sensorFragment) }
                 settingNav.setOnClickListener { findNavController().navigate(R.id.settingFragment) }
                 storeNav.setOnClickListener { findNavController().navigate(R.id.storeFragment) }
-                forumNav.setOnClickListener { findNavController().navigate(R.id.forumFragment) }
                 aboutNav.setOnClickListener { findNavController().navigate(R.id.about_nav) }
                 navigationBar.check(R.id.beacon_nav)
             }

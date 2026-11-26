@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FeasyBeacon 隐私政策</title>
+<style>
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Arial,sans-serif;line-height:1.75;color:#222;margin:16px 18px 48px;font-size:15px;background:#fff;-webkit-text-size-adjust:100%}
+  h1{font-size:20px;text-align:center;margin:8px 0 4px}
+  h2{font-size:17px;margin:26px 0 10px;padding-left:8px;border-left:4px solid #D1894A}
+  p,li{font-size:14.5px}
+  .meta{color:#777;font-size:13px;text-align:center;margin-bottom:18px}
+  table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px}
+  th,td{border:1px solid #ddd;padding:7px 8px;text-align:left;vertical-align:top;word-break:break-word}
+  th{background:#faf5f0;font-weight:600;white-space:nowrap}
+  .tip{background:#f7f7f7;border:1px solid #eee;border-radius:6px;padding:10px 12px;margin:12px 0;font-size:13.5px}
+  .strong{font-weight:600;color:#B45309}
+  a{color:#B45309;word-break:break-all}
+  ul,ol{padding-left:22px}
+  small{color:#888}
+</style>
+</head>
+<body>
+
+<h1>FeasyBeacon 隐私政策</h1>
+<div class="meta">版本 V1　更新日期：2026 年 11 月 19 日　生效日期：2026 年 11 月 19 日</div>
+
+<p>深圳市飞易通科技有限公司（以下简称“我们”）深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们制定本《FeasyBeacon 隐私政策》（以下简称“本政策”），用于说明 <strong>FeasyBeacon 应用（包名：com.feasycom.feasybeacon，以下简称“本应用”）</strong>如何收集、使用、存储和保护您的个人信息，以及您享有的权利。</p>
+
+<div class="tip">
+<strong>请您在使用本应用前仔细阅读本政策。</strong>其中与您的个人信息权益存在重大关系的条款已用<span class="strong">加粗</span>标示。您点击“同意”即表示您已充分理解并同意本政策；<strong>如果您不同意，请不要点击“同意”，我们将不会收集任何个人信息，您可以正常退出应用。</strong>
+</div>
+
+<h2>一、我们如何收集和使用您的个人信息</h2>
+
+<p>我们遵循“最小必要”原则，仅收集实现下列功能所必需的信息。<strong>本应用的核心功能是搜索、连接并配置低功耗蓝牙（BLE）信标设备</strong>，这决定了我们必须使用蓝牙与定位权限。</p>
+
+<table>
+<tr><th>信息类型</th><th>收集目的</th><th>收集方式与时机</th><th>收集范围</th><th>是否必需</th></tr>
+<tr>
+  <td>蓝牙设备信息：设备 MAC 地址、设备名称、信号强度（RSSI）、广播数据（含 iBeacon / Eddystone / AltBeacon 广播内容）</td>
+  <td>搜索附近的蓝牙信标、建立连接、读取与配置设备参数、批量配置、OTA 升级</td>
+  <td>仅在您打开“Beacon / Sensor / Setting / Batch”等设备列表页面，并已授权蓝牙权限时，通过系统蓝牙接口扫描获得</td>
+  <td>仅限您周围可被扫描到的蓝牙设备信息；<strong>不涉及您的身份信息，也不用于定位</strong></td>
+  <td>必需（否则无法搜索和连接设备）</td>
+</tr>
+<tr>
+  <td>位置权限（粗略/精确）</td>
+  <td>Android 系统规定：扫描低功耗蓝牙设备必须获得位置权限，否则无法扫描到设备</td>
+  <td>您点击扫描功能时由系统弹窗申请</td>
+  <td><strong>仅用于满足系统扫描要求，我们不读取、不采集、不上传您的实际地理位置，也不基于位置做任何业务处理</strong></td>
+  <td>必需（否则无法扫描设备）</td>
+</tr>
+<tr>
+  <td>相机</td>
+  <td>扫描设备二维码 / 条码，快速连接信标</td>
+  <td>仅在您主动点击“扫码连接”功能时申请并使用</td>
+  <td>仅处理取景框内的二维码图像，不保存、不上传</td>
+  <td>可选（不使用扫码功能可不授权）</td>
+</tr>
+<tr>
+  <td>您主动输入的信息：设备名称、PIN 码、广播参数（UUID / Major / Minor、发射功率、广播间隔、传感器参数等）</td>
+  <td>写入并配置您的蓝牙信标设备</td>
+  <td>您在参数设置页面手动输入或选择时</td>
+  <td><strong>仅通过蓝牙写入设备，不上传至我们的服务器</strong></td>
+  <td>可选（仅在使用配置功能时）</td>
+</tr>
+<tr>
+  <td>设备与网络信息：应用版本、系统版本、设备型号、网络类型、IP 地址</td>
+  <td>获取设备型号参数表、广告位配置、检查应用更新、下载升级文件、加载产品页面（官网内嵌网页）</td>
+  <td>在您同意本政策后，应用运行时自动产生</td>
+  <td>不包含 IMEI、IMSI、OAID、本机 MAC 等设备标识</td>
+  <td>必需（否则无法更新型号表与提示新版本）</td>
+</tr>
+<tr>
+  <td>产品页面访问信息：IP 地址、网络类型、设备与浏览器信息、Cookie 与访问日志（由飞易通官网处理）</td>
+  <td>在应用内展示产品型号与参数</td>
+  <td>仅在您打开“产品”页面时由内嵌网页产生</td>
+  <td>不涉及账号、订单与支付信息；Cookie 与访问日志由官网按其隐私政策处理</td>
+  <td>可选（不使用产品页面可不打开）</td>
+</tr><tr>
+  <td>崩溃日志：崩溃堆栈、设备型号、系统版本、AndroidID、网络状态</td>
+  <td>统计与分析应用崩溃，定位并修复问题</td>
+  <td>由第三方 SDK 腾讯 Bugly 在您同意本政策后自动采集</td>
+  <td>仅用于崩溃分析，不用于推送、画像或广告</td>
+  <td>必需（否则无法定位线上崩溃）</td>
+</tr>
+<tr>
+  <td>本地存储数据：已连接设备记录、二维码图片、升级文件、广告图缓存</td>
+  <td>保存您的设备列表与离线资源，提升使用体验</td>
+  <td>在您使用相应功能时保存至手机本地</td>
+  <td><strong>仅保存在您的设备本地，不上传服务器；卸载应用即删除</strong></td>
+  <td>可选（删除后对应记录/缓存丢失）</td>
+</tr>
+</table>
+
+<h3>我们不会收集的信息（明确声明）</h3>
+<div class="tip">
+本应用<strong>不会收集</strong>以下信息：IMEI、IMSI、OAID、本机 MAC 地址、手机号、通讯录、短信、彩信、通话记录、相册/照片、<strong>已安装应用列表</strong>、剪贴板内容、位置轨迹、人脸/指纹等生物识别信息。<br>
+其中，剪贴板仅存在<strong>写入</strong>行为（当您在崩溃页面点击“复制错误信息”时把日志写入剪贴板），<strong>不会读取</strong>剪贴板内容。
+</div>
+
+<h2>二、第三方 SDK 及其收集的信息</h2>
+
+<p>为实现上述部分功能，我们接入了以下第三方 SDK。我们已要求第三方严格按照法律法规与最小必要原则处理信息，详情请查阅其隐私政策。</p>
+
+<table>
+<tr><th>SDK 名称 / 版本</th><th>提供方</th><th>收集的信息</th><th>使用目的</th><th>隐私政策链接</th></tr>
+<tr>
+  <td>腾讯 Bugly 崩溃统计 4.1.9</td>
+  <td>深圳市腾讯计算机系统有限公司</td>
+  <td>崩溃堆栈、设备型号、操作系统版本、AndroidID、网络状态、应用版本</td>
+  <td>统计应用崩溃与异常，定位并修复问题</td>
+  <td><a href="https://privacy.qq.com/document/preview/fc748b3d96224fdb825ea79e132c1a56">腾讯隐私政策</a></td>
+</tr>
+<tr>
+  <td>Google Play 应用内更新（App Update）2.1.0</td>
+  <td>Google LLC</td>
+  <td>应用包名、版本号</td>
+  <td>检查并提示应用新版本（仅当设备装有 Google Play 服务时生效）</td>
+  <td><a href="https://policies.google.com/privacy">Google 隐私权政策</a></td>
+</tr>
+<tr>
+  <td>内嵌网页：飞易通官网产品页</td>
+  <td>深圳市飞易通科技有限公司</td>
+  <td>访问时的 IP 地址、网络与设备信息、Cookie 与访问日志</td>
+  <td>展示产品目录与参数（不涉及下单与支付）</td>
+  <td><a href="https://www.feasycom.cn/">飞易通官网</a></td>
+</tr><tr>
+  <td>OkHttp / Retrofit</td>
+  <td>开源社区（Square）</td>
+  <td>不单独采集个人信息，仅承载应用的网络请求</td>
+  <td>网络通信</td>
+  <td><a href="https://square.github.io/okhttp/">OkHttp</a></td>
+</tr>
+<tr>
+  <td>Glide</td>
+  <td>开源社区</td>
+  <td>不采集个人信息，仅负责图片加载与本地缓存</td>
+  <td>图片加载</td>
+  <td><a href="https://github.com/bumptech/glide">Glide</a></td>
+</tr>
+<tr>
+  <td>XXPermissions / DeviceCompat</td>
+  <td>开源社区（getActivity）</td>
+  <td>不采集个人信息，仅在本地判断权限状态</td>
+  <td>权限申请与适配</td>
+  <td><a href="https://github.com/getActivity/XXPermissions">XXPermissions</a></td>
+</tr>
+<tr>
+  <td>KingKeyboard</td>
+  <td>开源社区</td>
+  <td>不采集个人信息，仅提供本地数字键盘输入</td>
+  <td>参数输入</td>
+  <td>—</td>
+</tr>
+</table>
+
+<h2>三、关于“同意前不收集”的承诺</h2>
+
+<div class="tip">
+<span class="strong">在您点击“同意”本政策之前：</span>
+<ul>
+  <li>我们<strong>不会初始化任何会采集个人信息的第三方 SDK</strong>（包括腾讯 Bugly）；</li>
+  <li>我们<strong>不会发起任何网络请求</strong>（包括设备型号表更新、广告配置、应用更新检查）；</li>
+  <li>我们<strong>不会读取</strong> IMEI、IMSI、OAID、本机 MAC、应用列表、剪贴板等任何信息；</li>
+  <li>我们<strong>不会申请</strong>蓝牙、定位、相机等敏感权限。</li>
+</ul>
+只有您点击“同意”后，上述功能才会按本政策所述开始工作。
+</div>
+
+<h2>四、应用申请的权限及其用途</h2>
+
+<table>
+<tr><th>权限</th><th>用途</th><th>授权时机</th></tr>
+<tr><td>蓝牙扫描（BLUETOOTH_SCAN）</td><td>搜索附近的蓝牙信标设备</td><td>进入设备列表并点击扫描时</td></tr>
+<tr><td>蓝牙连接（BLUETOOTH_CONNECT）</td><td>连接并读取/配置信标参数</td><td>连接设备时</td></tr>
+<tr><td>蓝牙广播（BLUETOOTH_ADVERTISE）</td><td>自定义广播功能</td><td>使用自定义广播时</td></tr>
+<tr><td>位置（ACCESS_COARSE_LOCATION / ACCESS_FINE_LOCATION）</td><td>Android 系统要求：扫描 BLE 设备必须授予定位权限。<strong>我们不会读取或上传您的位置</strong></td><td>进入设备列表时</td></tr>
+<tr><td>相机（CAMERA）</td><td>扫描二维码连接设备</td><td>点击扫码功能时</td></tr>
+<tr><td>存储（Android 10 及以下）</td><td>读取升级文件、保存二维码图片</td><td>使用对应功能时</td></tr>
+<tr><td>网络（INTERNET / ACCESS_NETWORK_STATE / ACCESS_WIFI_STATE）</td><td>获取型号表、检查更新、下载升级文件、加载产品页面</td><td>应用运行时</td></tr>
+</table>
+
+<h2>五、我们如何存储和保护个人信息</h2>
+<ul>
+  <li><strong>存储地点：</strong>设备列表、二维码图片、升级文件、广告图缓存仅保存在您的手机本地；网络请求经由加密通道（HTTPS）传输。</li>
+  <li><strong>存储期限：</strong>本地数据在您卸载应用或清除应用数据后删除；崩溃日志按腾讯 Bugly 的隐私政策在其服务器保留。</li>
+  <li><strong>安全措施：</strong>我们采用访问控制、传输加密等措施保护信息安全；但请注意，互联网环境并非绝对安全。</li>
+  <li><strong>例外情形：</strong>根据法律法规或有权机关的要求，我们可能需提供相关信息。</li>
+</ul>
+
+<h2>六、我们如何共享、转让、公开披露个人信息</h2>
+<ul>
+  <li><strong>共享：</strong>除本政策“二、第三方 SDK”所列情形外，我们不会向任何第三方共享您的个人信息。</li>
+  <li><strong>转让：</strong>不会转让，除非因合并、分立等原因导致主体变更，并要求接收方继续受本政策约束。</li>
+  <li><strong>公开披露：</strong>不会公开披露，除法律法规要求或取得您单独同意。</li>
+  <li><strong>跨境传输：</strong>我们不会将您的个人信息传输至境外。</li>
+</ul>
+
+<h2>七、您的权利</h2>
+<ul>
+  <li><strong>查询与更正：</strong>您可在应用内查看设备记录与参数；如需更正，可通过下方联系方式联系我们。</li>
+  <li><strong>删除：</strong>您可在应用内删除设备记录，或清除应用数据/卸载应用以删除本地全部数据。</li>
+  <li><strong>撤回同意：</strong>您可以在系统“设置 → 应用 → FeasyBeacon → 存储”中清除应用数据，或卸载应用，从而撤回本政策下的授权。<strong>撤回后我们将不再初始化第三方 SDK、不再发起网络请求。</strong>撤回不影响撤回前已基于同意进行的处理。</li>
+  <li><strong>注销：</strong>本应用不提供账号注册/登录功能，不存在账号注销问题。</li>
+  <li><strong>投诉与反馈：</strong>您可通过下方联系方式与我们联系，我们将在 15 个工作日内答复。</li>
+</ul>
+
+<h2>八、未成年人保护</h2>
+<p>本应用主要面向企业用户与技术人员。若您是未满 14 周岁的未成年人，请在监护人的陪同下阅读本政策，并在取得监护人同意后使用本应用。我们不会主动收集未成年人的个人信息；如发现误收集，我们将及时删除。</p>
+
+<h2>九、本政策的更新</h2>
+<p>我们可能适时更新本政策。更新后，我们会在应用启动时以弹窗方式重新征得您的同意；若涉及处理目的、信息类型、共享对象等重大变更，我们会以更显著的方式通知您。本政策版本号显示在标题下方。</p>
+
+<h2>十、如何联系我们</h2>
+<p>开发者：深圳市飞易通科技有限公司<br>
+地址：广东省深圳市宝安区西乡街道共乐社区铁仔路 50 号凤凰智谷 A 栋<br>
+邮箱：<a href="mailto:sales@feasycom.com">sales@feasycom.com</a><br>
+官网：<a href="https://www.feasycom.cn/">www.feasycom.cn</a></p>
+
+<p><small>本政策自 2026 年 11 月 19 日起生效，版本 V1。如中文与英文版本存在不一致，以中文版本为准。</small></p>
+
+</body>
+</html>

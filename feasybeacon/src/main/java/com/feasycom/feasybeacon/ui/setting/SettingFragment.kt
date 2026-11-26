@@ -281,9 +281,6 @@ class SettingFragment : BaseFragment<FragmentDeviceBinding>(), FscBleCallback {
         footBinding.storeNav.setOnClickListener {
             findNavController().navigate(R.id.storeFragment)
         }
-        footBinding.forumNav.setOnClickListener {
-            findNavController().navigate(R.id.forumFragment)
-        }
         footBinding.aboutNav.setOnClickListener {
             findNavController().navigate(R.id.about_nav)
         }

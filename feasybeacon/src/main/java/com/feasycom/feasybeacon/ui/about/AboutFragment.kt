@@ -85,9 +85,6 @@ class AboutFragment : BaseFragment<FragmentAboutBinding>() {
             settingNav.setOnClickListener {
                 navigateToFragment(R.id.settingFragment)
             }
-            forumNav.setOnClickListener {
-                navigateToFragment(R.id.forumFragment)
-            }
             storeNav.setOnClickListener {
                 navigateToFragment(R.id.storeFragment)
             }

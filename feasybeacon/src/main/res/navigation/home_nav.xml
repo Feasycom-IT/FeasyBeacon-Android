@@ -29,11 +29,6 @@
         android:name="com.feasycom.feasybeacon.ui.store.StoreFragment"
         android:label="StoreFragment" />
 
-    <fragment
-        android:id="@+id/forumFragment"
-        android:name="com.feasycom.feasybeacon.ui.forum.ForumFragment"
-        android:label="ForumFragment" />
-
     <include app:graph="@navigation/about_nav" />
 
 </navigation>

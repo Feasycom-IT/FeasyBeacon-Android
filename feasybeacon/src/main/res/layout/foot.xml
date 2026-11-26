@@ -65,19 +65,7 @@
             android:button="@null"
             android:drawableTop="@drawable/select_navigation_store"
             android:gravity="center"
-            android:text="@string/store"
-            android:textColor="@drawable/navigation_bar_color"
-            android:visibility="gone" />
-
-        <RadioButton
-            android:id="@+id/forum_nav"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@null"
-            android:drawableTop="@drawable/select_navigation_forum"
-            android:gravity="center"
-            android:text="@string/forum"
+            android:text="@string/product"
             android:textColor="@drawable/navigation_bar_color" />
 
         <RadioButton
